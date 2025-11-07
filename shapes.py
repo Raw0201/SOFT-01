@@ -1,10 +1,10 @@
 chr = "*"
 spc = " "
 
-O_shape = f"{chr}{chr}\n{chr}{chr}"
-I_shape = f"{chr}\n{chr}\n{chr}"
-S_shape = f"{spc}{chr}{chr}\n{chr}{chr}"
-Z_shape = f"{chr}{chr}\n{spc}{chr}{chr}"
+o_shape = f"{chr}{chr}\n{chr}{chr}"
+l_shape = f"{chr}\n{chr}\n{chr}"
+s_shape = f"{spc}{chr}{chr}\n{chr}{chr}"
+z_shape = f"{chr}{chr}\n{spc}{chr}{chr}"
 L_shape = f"{chr}\n{chr}\n{chr}{chr}"
 J_shape = f"{spc}{chr}\n{spc}{chr}\n{chr}{chr}"
 T_shape = f"{chr}{chr}{chr}\n{spc}{chr}"
@@ -26,6 +26,6 @@ def shape_symbol(piece: str) -> str:
 
 def run_exercise():
     """Ejecuta el ejercicio de mostrar figura"""
-    piece = input("Ingrese la figura a seleccionar(o, l, s, z, L, J, T): ").upper()
+    piece = input("Ingrese la figura a seleccionar(o, l, s, z, L, J, T): ")
     shape = shape_symbol(piece)
     print(shape)
