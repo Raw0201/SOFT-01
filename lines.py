@@ -4,7 +4,7 @@ range_bottom = 0
 range_top = 50
 error_msg = "El dato de entrada no es válido"
 
-def points_calc(lines_qty: str) -> int: #get_score
+def points_calc(lines_qty: str) -> int:
     """ Calcula el puntaje obtenido por cantidad de líneas
     Args:
         lines_qty (str): Cantidad de líneas ingresadas
@@ -24,3 +24,4 @@ def run_exercise():
         print(f"Puntaje: {points}")
     else:
         print("El dato de entrada no es válido")
+
