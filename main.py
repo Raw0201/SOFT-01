@@ -7,17 +7,16 @@ import rotation
 def mostrar_menu():
     """Muestra el menú principal del programa"""
     print("")
-    print("")
     print("**********************************")
     print("*                                *")
     print("*\tMenú de opciones:        *")
     print("*                                *")
     print("**********************************")
     print("")
-    print("1. Ejercicio 1 - Apilamiento vertical")
-    print("2. Ejercicio 2 - Puntaje acumulado")
-    print("3. Ejercicio 3 - Mostrar Figura")
-    print("4. Ejercicio 4 - Rotar Figura")
+    print("1. Apilamiento vertical")
+    print("2. Puntaje acumulado")
+    print("3. Mostrar Figura")
+    print("4. Rotar Figura")
     print("0. Salir")
 
 def main():
@@ -54,4 +53,5 @@ def main():
             print("Opción no válida. Intenta nuevamente.")
 
 if __name__ == "__main__":
+
     main()
