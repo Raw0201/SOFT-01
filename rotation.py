@@ -26,36 +26,35 @@ def turn_piece() -> str:
 
     while True:
         option = input("""
-        Ingrese la letra de acuerdo con la orientación inicial de la pieza:
+Ingrese la letra de acuerdo con la orientación inicial de la pieza:
 
-                                (A) Arriba
-                (i) Izquierda                  (d) Derecha 
-                                (a) Abajo
+                        (A) Arriba
+        (i) Izquierda                  (d) Derecha 
+                        (a) Abajo
             
-        O digite (f) para salir. Opción: """)
+O digite (f) para salir. Opción: """)
 
         if option in ("f", "F"):
-            print("Gracias por usar el programa")
             break
 
         elif option in valid_orientations:
             turn_right = input("\nIngrese la cantidad de rotaciones hacia la derecha: ")
 
             if is_int(turn_right):
-                turn_left = input("\nIngrese la cantidad de rotaciones hacia la izquierda: ")
+                turn_left = input("Ingrese la cantidad de rotaciones hacia la izquierda: ")
 
                 if is_int(turn_left):
                     new_orientation = orientation_finder(option, turn_right, turn_left)
                     return new_orientation
                 
                 else:
-                    print("Error en giro a la izquierda. Por favor ingrese un dato válido")
+                    print("El dato de entrada no es válido. Error en giro a la izquierda")
 
             else:
-                print("Error en giro a la derecha. Por favor ingrese un dato válido")
+                print("El dato de entrada no es válido. Error en giro a la derecha")
         
         else:
-            print("Error en orientación inicial. Por favor ingrese un dato válido")
+            print("El dato de entrada no es válido. Error en orientación inicial")
 
 def run_exercise():
     """Ejecuta el ejercicio de rotar figura"""
